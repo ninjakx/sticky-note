@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Sticky Note",
+  "description": "Write to remember.",
+  "version": "1.0",
+ 
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "sticky_note.html"
+  },
+  "permissions": [
+     "storage",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+
+  "content_security_policy":"script-src 'self' http://code.jquery.com/jquery-1.10.2.js http://code.jquery.com/ui/1.11.2/jquery-ui.js http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js; object-src 'self'"
+
+  
+}
